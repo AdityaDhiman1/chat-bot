@@ -1,0 +1,36 @@
+<!-- <div class="chat-container">
+  <div *ngFor="let message of chatMessage" [ngClass]="message.role">
+    {{ message.content }}
+  </div>
+</div>
+
+<div class="input-container">
+  <input [(ngModel)]="userMessage" placeholder="Enter your message" />
+  <button (click)="sendMessage()">Send</button>
+</div> -->
+
+
+<div class="container">
+  <div class="canvas">
+      <button>t<i class="fa-solid fa-bars"></i></button>
+  </div>
+  <div class="upper-section">
+      <h1>ChatGPT</h1>
+  </div>
+  <div class="chat-container">
+    <div *ngFor="let message of chatMessage" [ngClass]="message.role">
+      {{ message.content }}
+    </div>
+  </div>
+
+
+  <div class="input-box">
+      <input type="text" [(ngModel)]="userMessage" placeholder="Send a message">
+      <button (click)="sendMessage()">Send</button>
+  </div>
+</div>
+
+
+
+
+
